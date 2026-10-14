@@ -1,5 +1,4 @@
 
-
 def format_follower_count(num):
     if (num>=1000000):
         return "{:.1f}M".format(num/1000000)

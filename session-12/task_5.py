@@ -1,3 +1,6 @@
+from functools import reduce
 
-# 5.
-# Using reduce() and a lambda function, calculate the total bill amount for a Swiggy order given a list of item prices: [120, 80, 150, 60].<br><br><em><strong>Hint:</strong> Import reduce from functools.</em>
+prices = [120, 80, 150, 60]
+
+sumarr = reduce(lambda pre,res: pre+res,prices)
+print("Sum = ",sumarr)
